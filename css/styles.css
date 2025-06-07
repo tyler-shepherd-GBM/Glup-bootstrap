@@ -1,0 +1,253 @@
+/* ===================
+     Global Styles
+==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Leto', sans-serif;
+    overflow-x: hidden;
+    background-color: #131D26;
+    color: white;
+  }
+  
+  p {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  h1,
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* ===================
+       Navbar Override (optional)
+  ==================== */
+  /* 
+  .nav-bar-container, .nav-bar, .inline-block {
+    display: none;
+  } 
+  */
+  
+  /* ===================
+       Footer Styles
+  ==================== */
+  .footer-container {
+    display: flex;
+    background-color: #59331D;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .footer-inline-block {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #D98555;
+  }
+  
+  .footer-container a {
+    color: #D98555;
+    text-decoration: none;
+  }
+  
+  .footer-container a:hover {
+    color: #A55B35;
+  }
+  
+  /* ===================
+       Button Styles
+  ==================== */
+  .contact-button {
+    background-color: #082B59;
+    color: #F2F2F2;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px auto;
+  }
+  
+  .contact-button:hover {
+    background-color: #A55B35;
+  }
+  
+  .button-container {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px;
+  }
+  
+  /* ===================
+       Image & Hero
+  ==================== */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .brand-img img {
+    display: block;
+    margin: auto;
+  }
+  
+  .hero-text h1 {
+    position: absolute;
+    font-size: 55px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero-img img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    padding: 20px 0;
+  }
+  
+  /* ===================
+       Section Styles
+  ==================== */
+  .section-1,
+  .section-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    background-color: #131D26;
+    padding: 40px 20px;
+    width: 100%;
+  }
+  
+  /* ===================
+       Products Page
+  ==================== */
+  .products-wrapper {
+    background-color: #131D26;
+    padding: 40px 20px;
+  }
+  
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .product-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #082B59;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .product-card img {
+    width: 180px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .product-description h2 {
+    text-align: left;
+    color: white;
+  }
+  
+  .product-description p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .order-button {
+    background-color: #D98555;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+  }
+  
+  .order-button:hover {
+    background-color: #A55B35;
+  }
+  
+  /* ===================
+       Responsive Adjustments
+  ==================== */
+  @media (max-width: 768px) {
+    .section-1,
+    .section-2 {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .product-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .product-card img {
+      margin: 0 0 15px 0;
+    }
+  
+    .product-description {
+      text-align: center;
+    }
+  
+    .hero-text h1 {
+      font-size: 32px;
+      top: 60%;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    .contact-button {
+      padding: 12px 30px;
+      font-size: 16px;
+    }
+  }
+  
